@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SegitigaFragment">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etAlasSegitiga" android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent" android:hint="@string/hint_alas"/>
+    <Button
+            android:text="@string/bt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btShare"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvKelilingSegitiga"/>
+    <Button
+            android:text="@string/bt_hitungPP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btHitung2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/etTinggiSegitiga"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLuasSegitiga"
+            app:layout_constraintTop_toBottomOf="@+id/btHitung2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" android:layout_marginTop="24dp"
+            android:textSize="30sp" tools:text="@string/luas"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvKelilingSegitiga"
+            app:layout_constraintTop_toBottomOf="@+id/tvLuasSegitiga" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" tools:text="@string/keliling"
+            android:layout_marginTop="24dp" android:textSize="30sp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etTinggiSegitiga" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/etAlasSegitiga" android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="24dp"
+            android:hint="@string/hint_tinggi"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
